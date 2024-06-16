@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>¡Espera!</title>
+  </head>
+  <script>
+    function iniciarTemporizador() {
+        let contador = 10; // Iniciar el contador en 10
+        const elementoContador = document.getElementById('contador');
+       
+        const intervalo = setInterval(() => {
+            // Actualizar el contenido del elemento HTML con el contador actualizado
+            elementoContador.textContent = contador;
+
+            // Disminuir el contador
+            contador--;
+
+            // Si el contador llega a 0, detener el intervalo y redirigir
+            if (contador < 0) {
+                clearInterval(intervalo);
+                window.location.href = "formulario.html"; // Redirigir a la nueva página
+            }
+        }, 1000);
+    }
+</script>
+  <body>
+    
+    <button id="boton" onclick="iniciarTemporizador()">clickeá acá asi empezas el formulario</button>
+    <h2>Podrás completar el formulario en: <span id="contador">10</span></h2> 
+   
+    
+</section>
+</body>
+
+</html>

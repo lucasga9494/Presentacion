@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <title>Formulario</title>
+  
+</head>
+
+<body>
+  <script src="alert.js"></script>
+ 
+<div class="formularioIcono">
+ 
+  
+  
+<a href="index.html">  <i class="fa-solid fa-house" style="color: #ebedef;"></i></a>
+</div>
+
+ 
+  <div class="Formulario" id="Formulario">
+    <section id="01">
+      <h3>1- ¿Cuantos años tengo?</h3>
+      <label>
+        <input type="radio" value="1" name="01" onclick="respuesta(0,this)" />27
+      </label>
+      <label>
+        <input type="radio" value="2" name="01" onclick="respuesta(0,this)" />28
+      </label>
+      <label>
+        <input type="radio" value="3" name="01" onclick="respuesta(0,this)" />29
+      </label>
+    </section>
+    <section id="02">
+      <h3>2- ¿Quien me dijo que vaya al terciario?</h3>
+      <label>
+        <input type="radio" value="1" name="02" onclick="respuesta(1,this)" />Mi
+        abuela
+      </label>
+      <label>
+        <input type="radio" value="2" name="02" onclick="respuesta(1,this)" />Mi
+        padre
+      </label>
+      <label>
+        <input type="radio" value="3" name="02" onclick="respuesta(1,this)" />Mi
+        tia
+      </label>
+    </section>
+    <section id="03">
+      <h3>3- ¿Cual es la consola de videojuegos es la que mas me gusta?</h3>
+      <label>
+        <input
+          type="radio"
+          value="1"
+          name="03"
+          onclick="respuesta(2,this)"
+        />Nintendo
+      </label>
+      <label>
+        <input
+          type="radio"
+          value="2"
+          name="03"
+          onclick="respuesta(2,this)"
+        />Sega
+      </label>
+      <label>
+        <input
+          type="radio"
+          value="3"
+          name="03"
+          onclick="respuesta(2,this)"
+        />Cualquier cosa viene bien
+      </label>
+    </section>
+    <section id="04">
+      <h3>4- Si me tenes que invitar a un lugar a comer, ¿donde sería?</h3>
+      <label>
+        <input
+          type="radio"
+          value="1"
+          name="04"
+          onclick="respuesta(3,this)"
+        />Restaurante vegano
+      </label>
+      <label>
+        <input
+          type="radio"
+          value="2"
+          name="04"
+          onclick="respuesta(3,this)"
+        />Sushi club
+      </label>
+      <label>
+        <input
+          type="radio"
+          value="3"
+          name="04"
+          onclick="respuesta(3,this)";
+        />Parrilla libre o tenedor libre
+      </label>
+    </section>
+    <button onclick="corregir()">Enviar</button>
+    <h2>Puntaje:<span id="resultado"></span></h2>
+   
+    <script src=script.js></script>
+</div>
+
+
+</body>

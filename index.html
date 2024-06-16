@@ -15,8 +15,6 @@
         <nav>
             
             <ul>
-            
-
                 <li><a href="#">inicio</li></a>
                 <li><a href="hobbies.html">hobbies</li></a>
                 <li><a href="ComidasPreferidas.html">Comidas preferidas</li></a>
@@ -27,16 +25,27 @@
    
 </div>
     </div>
-    <div class="Inicio">
-    <img src="./img/lucas1.png" alt="">
-    <p class="caja1">Hola soy Lucas ,tengo 29 años, curso el tercer año en la carrera del instituto de formación técnica superior número 16, y soy encargado de un negocio.
+    
+    <div class="Inicio" >
+     
+    <img src="lucas1.png" id="img" alt="" onmouseover="change1()" onmouseout="change2()">
+ </div>
+   <p class="caja1">Hola soy Lucas ,tengo 29 años, curso el tercer año en la carrera del instituto de formación técnica superior número 16, y soy encargado de un negocio.
      Conocí esta carrera gracias a mi abuela que me insistió que vaya averiguar cuando la institución estaba en Lascano, antes de eso hacía reparación de pc.
     A continuación me gustaría compartirles algunas cosas que me gustan.
     Arriba hay una lista de mis hobbies y mis comidas favoritas como para empezar a conocerme!.
-        
+        <script>
+        function change1() {
+                document.getElementById("img").src = "foto2..jpg";
+                                    }
+        function change2() {
+                document.getElementById("img").src = "lucas1.png";
+                                    }
+
+
+        </script>
     </p>
 
-   
 </div>
 <br><br><br>
     <div class="Social" >
@@ -49,5 +58,13 @@
      <a href="linkedin.com"> <img src="./img/linkedin.png" ></a>
      
     </div>
+<button id="btnForm" class="btnForm" ><a href="alerta.html">Hacé el cuestionario</button></a>
+    <div id="contador" class="contador"></div>
+
+<div id="VerReloj" class="Reloj"></div>
+<script src="main.js"></script>
+<div id="Formulario" class="form"></div>
+<footer>Derechos Reservados Lucas Aran 2024</footer>
+
 </body>
 </html>
